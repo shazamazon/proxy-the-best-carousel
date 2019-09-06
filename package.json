@@ -8,7 +8,9 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/server.js"
+    "start": "nodemon server/server.js",
+    "live": "pm2 start server/server.js",
+    "save": "pm2 save"
   },
   "dependencies": {
     "express": "^4.17.1",
